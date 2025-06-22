@@ -1,0 +1,95 @@
+/* Whole table background */
+.table-view {
+    -fx-border-color: transparent !important;
+    -fx-background-radius: 0px !important;
+    -fx-padding: 0px !important;
+}
+/* Remove any background bleed from the full header bar */
+.table-view .column-header-background {
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+/* Make header labels seamless */
+.table-view .column-header .label {
+    -fx-background-color: #5E35B1;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+    -fx-padding: 10px;
+    -fx-border-width: 0;
+    -fx-border-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+/* This hides the invisible borders JavaFX may sneak in */
+.table-view .column-header {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+
+
+/* Filler space after the last column */
+.table-view .filler {
+    -fx-background-color: transparent !important;
+}
+
+/* Row background */
+.table-view .table-row-cell {
+    -fx-background-color: white !important;
+    -fx-border-color: transparent !important;
+    -fx-font-size: 13px !important;
+}
+
+/* Row hover */
+.table-view .table-row-cell:hover {
+    -fx-background-color: #eee !important;
+}
+
+/* Table cells */
+.table-view .table-cell {
+    -fx-text-fill: #212121 !important;
+    -fx-padding: 10px !important;
+    -fx-alignment: CENTER !important;
+}
+
+/* Remove scroll bar unless needed */
+.scroll-bar:vertical, .scroll-bar:horizontal {
+    -fx-opacity: 0;
+    -fx-pref-width: 0px;
+    -fx-max-width: 0px;
+    -fx-pref-height: 0px;
+    -fx-max-height: 0px;
+}
+
+/* Show scrollbar only when needed */
+.scroll-bar:vertical:visible, .scroll-bar:horizontal:visible {
+    -fx-opacity: 1;
+}
+
+
+.hover-btn1 {
+	-fx-padding:2px 5px 2px 5px !important;
+}
+
+.hover-btn:hover {
+	-fx-background-color: #fff !important;
+	-fx-border-color: #5E35B1 !important;
+	-fx-text-fill: #5E35B1 !important;
+	-fx-border-width: 1px !important;
+	-fx-cursor: hand  !important;
+}
+.hover-btn1:hover {
+    -fx-background-color: #5E35B1 !important;
+	-fx-text-fill: #fff !important;
+	-fx-cursor: hand  !important;
+}
+
+.hover-btn:pressed, .hover-btn1:pressed {
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}

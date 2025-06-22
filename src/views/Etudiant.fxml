@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" stylesheets="@FilStyle.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EtudiantController">
+   <children>
+      <Button fx:id="btndelete" layoutX="670.0" layoutY="560.0" mnemonicParsing="false" onAction="#Supprimer" prefHeight="62.0" prefWidth="200.0" style="-fx-background-color: #5E35B1;" styleClass="hover-btn" text="Supprimer Etudiant" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnajout" layoutX="331.0" layoutY="560.0" mnemonicParsing="false" onAction="#Ajouter" prefHeight="62.0" prefWidth="200.0" style="-fx-background-color: #5E35B1;" styleClass="hover-btn" text="Ajouter Etudiant" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button fx:id="btnquitter" layoutX="1143.0" layoutY="6.0" mnemonicParsing="false" onAction="#Quitter" prefHeight="42.0" prefWidth="46.0" style="-fx-background-color: transparent;" styleClass="hover-btn1" text="X" textAlignment="CENTER" textFill="#5e35b1">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="17.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tableEtudiant" layoutX="121.0" layoutY="81.0" maxWidth="1135.0" prefHeight="450.0" prefWidth="960.0">
+        <columns>
+          <TableColumn fx:id="colNum" prefWidth="160.0" resizable="false" text="Numero" />
+          <TableColumn fx:id="colNom" prefWidth="160.0" resizable="false" text="Nom" />
+            <TableColumn fx:id="colPrenom" prefWidth="160.0" resizable="false" text="Prenom" />
+            <TableColumn fx:id="colEmail" prefWidth="320.0" resizable="false" text="Email" />
+            <TableColumn fx:id="colFiliere" prefWidth="160.0" resizable="false" text="Filière" />
+        </columns>
+      </TableView>
+      <Text fill="#5e35b1" layoutX="465.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Table des Etudiants" wrappingWidth="292.26669921874986">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Text>
+      <Button fx:id="btnreturn" layoutX="16.0" layoutY="6.0" mnemonicParsing="false" onAction="#Return" prefHeight="10.0" prefWidth="10.0" style="-fx-background-color: transparent;" styleClass="hover-btn1" text="&lt;" textAlignment="CENTER" textFill="#5e35b1">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="25.0" />
+         </font>
+      </Button>
+   </children>
+   
+   
+</AnchorPane>
