@@ -5,7 +5,7 @@
 <div align="center">
 
   <a href="https://github.com/islemnouali/EduManager">
-    <img src="https://i.imgur.com/V9M3bUI.png" alt="EduManager Logo" width="130" height="130">
+    <img src="https://i.imgur.com/uwZToQE.png" alt="EduManager Logo" width="130" height="130">
   </a>
 
   <h3 align="center">EduManager</h3>
